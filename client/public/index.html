@@ -5,6 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="/client/src/index.css">
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -29,6 +30,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +41,59 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <nav>
+      <div class="logo-name">
+        <div class="logo-image">
+           <img src="/client/public/logo192.png" alt="">
+        </div>
+      </div>
+      <div class="search-box">
+        <i class="uil uil-search"></i>
+        <input type="text" placeholder="Search here...">
+      </div>
+      <div class="menu-items">
+          <ul class="nav-links">
+              <li><a href="#">
+                  <i class="uil uil-Dashboard"></i>
+                  <span class="link-name">Dahsboard</span>
+              </a></li>
+              <li><a href="#">
+                  <i class="uil-Parts-List"></i>
+                  <span class="link-name">Parts List</span>
+              </a></li>
+              <li><a href="#">
+                  <i class="uil uil-Customers"></i>
+                  <span class="link-name">Customers</span>
+              </a></li>
+              <li><a href="#">
+                  <i class="uil uil-repairs"></i>
+                  <span class="link-name">repairs</span>
+              </a></li>
+          </ul>
+      </div>
+  </nav>
+  <section class="dashboard">
+    <div class="dash-content">
+      <div class="overview">
+          <div class="title">
+              <i class="uil uil-Dashboard"></i>
+              <span class="text">Dashboard</span>
+          </div>
+
+          <div class="boxes">
+              <div class="box box1">
+                  <i class="uil uil-Parts-List"></i>
+                  <span class="text">Parts List</span>
+              </div>
+              <div class="box box2">
+                  <i class="uil uil-Customers"></i>
+                  <span class="text">Customers</span>
+              </div>
+              <div class="box box3">
+                  <i class="uil uil-repairs"></i>
+                  <span class="text">repairs</span>
+              </div>
+          </div>
+      </div>
   </body>
 </html>
